@@ -1,6 +1,5 @@
 const sectionthree = document.getElementById('Section-three');
 const btns = document.getElementById('btn');
-const btns2 = document.getElementById('btn2');
 
 const Projectdetail = [
   {
@@ -96,4 +95,3 @@ function Rpeatspecker2() {
 
 document.addEventListener('DOMContentLoaded', Rpeatspecker, false);
 btns.addEventListener('click', Rpeatspecker2);
-btns2.addEventListener('click', Rpeatspecker);

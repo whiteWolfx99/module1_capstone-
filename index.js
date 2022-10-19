@@ -1,4 +1,9 @@
 const sectionthree = document.getElementById('Section-three');
+const btnnum1 = document.getElementById('btn-num1');
+const btnnum2 = document.getElementById('btn-num2');
+const menu = document.getElementById('menus');
+const openmenu = document.getElementById('openmenus');
+const closemenu = document.getElementById('closemenus');
 
 const Projectdetail = [
   {
@@ -57,11 +62,23 @@ const Projectdetail = [
   },
 ];
 
-function Rpeatspecker() {
-  let count;
-  for (count = 0; count < Projectdetail.length; count += 1) {
+function Rpeatspecker(n) {
+  sectionthree.innerHTML = '';
+  const w = document.documentElement.clientWidth || window.innerWidth;
+  if (n === null || n === undefined) {
+    if (w >= 800) {
+      n = Projectdetail.length;
+      btnnum1.classList.add('hidden');
+      btnnum2.classList.remove('hidden');
+    } else {
+      n = 2;
+      btnnum1.classList.remove('hidden');
+      btnnum2.classList.add('hidden');
+    }
+  }
+  for (let count = 0; count < n; count += 1) {
     sectionthree.innerHTML
-        += `<div id="Backgroundspecker${[count]}", class="Backgroundspecker${[count]}">    
+        += `<div class="Backgroundspecker">    
         <img class="background-img-speacker"  src="${Projectdetail[count].image}" alt="program1">
         <div class="background">    
           <h2 class="TitleOfspecker">${Projectdetail[count].Name}</h2>
@@ -74,4 +91,28 @@ function Rpeatspecker() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', Rpeatspecker, false);
+function expandMore() {
+  btnnum1.classList.add('hidden');
+  btnnum2.classList.remove('hidden');
+  Rpeatspecker(Projectdetail.length);
+}
+
+function showless() {
+  btnnum1.classList.remove('hidden');
+  btnnum2.classList.add('hidden');
+  Rpeatspecker(2);
+}
+
+function openallmenu() {
+  menu.classList.remove('hidden');
+}
+
+function closeallmenu() {
+  menu.classList.add('hidden');
+}
+
+document.addEventListener('DOMContentLoaded', Rpeatspecker(), false);
+btnnum1.addEventListener('click', expandMore);
+btnnum2.addEventListener('click', showless);
+openmenu.addEventListener('click', openallmenu);
+closemenu.addEventListener('click', closeallmenu);

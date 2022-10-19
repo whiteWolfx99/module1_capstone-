@@ -23,7 +23,6 @@
 In this capstone project ((remember what they are?) ) you are going to build is based on an online website for a conference. We provide some design guidelines for you to create the website, but you must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the you personalize your project so that you have something unique in your portfolio to share with potential employers during job searching.
 
 
-
 ## General requirements
 - Make sure that there are no linter errors.
 - Make sure that you used correct GitHub flow.
@@ -40,6 +39,10 @@ In this capstone project ((remember what they are?) ) you are going to build is 
 - js
 - Frameworks
 - Technologies used
+
+
+## LiveDemo
+[Go Live](https://whitewolfx99.github.io/module1_capstone-/index.html)
 
 ## Getting Started
 

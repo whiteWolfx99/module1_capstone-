@@ -1,13 +1,56 @@
+@import url('http://fonts.cdnfonts.com/css/coco-gothic');
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
 
+.Pastimage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.pastdescroverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  height: 300px;
+}
+
+.pastdescroverlay img {
+  width: 100%;
+  height: 300px;
+}
+
+.pastdescroverlay p {
+  margin: 0;
+}
+
+.descroverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  background-color: rgb(236, 82, 66, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.descroverlay p {
+  z-index: 5;
+  color: #fff;
+  font-weight: 500;
+}
+
 header {
-  padding: 15px 15px 55px 15px;
-  background: url('./images/background-mobile.png');
-  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -65,7 +108,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #272a31;
+  background-color: #fff;
 }
 
 .colord3 {
@@ -84,7 +127,7 @@ header {
 }
 
 .secondfooter p {
-  color: #fff;
+  color: #272a31;
   width: 50%;
 }
 
@@ -121,6 +164,11 @@ header {
   text-align: center;
 }
 
+.about-section {
+  background: url('./images/background-mobile.png');
+  background-size: cover;
+}
+
 .h1-co {
   color: #ec5242;
   width: 80%;
@@ -131,6 +179,7 @@ header {
 .h1-co h1 {
   margin: 0;
   padding: 0;
+  font-family: 'Coco Gothic', sans-serif;
 }
 
 .about-paragraph-sec1 {
@@ -199,17 +248,14 @@ header {
 }
 
 .past-description {
+  background-color: rgb(236, 82, 66, 0.5);
   position: absolute;
-  top: 32px;
-  left: 30px;
-  background: none;
-  color: black;
-  font-weight: 800;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  font-size: 20px;
+  justify-content: center;
+  row-gap: 12px;
 }
 
 .pasttitle {
@@ -235,10 +281,13 @@ header {
 
 .pastimage1,
 .pastimage2 {
-  width: 300px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70%;
   height: 300px;
-  filter: grayscale(100%);
-  filter: opacity(0.4);
 }
 
 .past1,
@@ -252,7 +301,6 @@ header {
     width: 200px;
     height: 200px;
     filter: grayscale(100%);
-    filter: opacity(0.4);
   }
 
   .codeodcontainer img {
@@ -289,12 +337,25 @@ header {
     padding: 0 65px 0 0;
   }
 
+  .footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31;
+  }
+
+  .secondfooter p {
+    color: #fff;
+    width: 50%;
+  }
+
   .pastimage1,
   .pastimage2 {
     width: 400px;
     height: 400px;
     filter: grayscale(100%);
-    filter: opacity(0.4);
   }
 
   .codeodcontainer img {
@@ -342,7 +403,19 @@ header {
   .social {
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
     gap: 20px;
+  }
+
+  .social p {
+    padding: 10px;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .social img {
+    width: 20px;
   }
 
   .destopnavbar {

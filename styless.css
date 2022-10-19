@@ -154,11 +154,26 @@ header {
   height: 160px;
 }
 
-.Backgroundspecker {
+.Backgroundspecker0,
+.Backgroundspecker1 {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 15px 0 0 0;
+}
+
+.Backgroundspecker2,
+.Backgroundspecker3,
+.Backgroundspecker4,
+.Backgroundspecker5 {
+  display: none;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 0 0 0;
+}
+
+.show-speaker {
+  display: none;
 }
 
 .background {
@@ -211,10 +226,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 0 35px 0;
+  padding: 20px;
 }
 
 .button-specker {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  color: #272a31;
+}
+
+.button-specker1 {
+  display: none;
   width: 400px;
   padding: 10px;
   margin: 5px;
@@ -301,7 +326,90 @@ header {
   display: none;
 }
 
+@media (max-width: 320px) {
+  .grid-logo {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondfooter img {
+    width: 50%;
+    height: auto;
+  }
+
+  .section-three {
+    padding: 30px 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Backgroundspecker0,
+  .Backgroundspecker1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 15px 0 0 0;
+  }
+
+  .Backgroundspecker2,
+  .Backgroundspecker3,
+  .Backgroundspecker4,
+  .Backgroundspecker5 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .container-sec1 h1 {
+    width: 70%;
+    font-size: 35px;
+    padding-bottom: 15px;
+  }
+
+  .button-second-section button {
+    padding: 15px 25px 15px 25px;
+    background-color: #ec5242;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+  }
+
+  .button-second-section {
+    padding: 10px;
+  }
+
+  .row-of-container-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff1a;
+    padding: 5px;
+  }
+}
+
 @media (min-width: 800px) {
+  .Backgroundspecker0,
+  .Backgroundspecker1,
+  .Backgroundspecker2,
+  .Backgroundspecker3,
+  .Backgroundspecker4,
+  .Backgroundspecker5 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 0 0 0;
+  }
+
+  .button-specker {
+    display: none;
+  }
+
   .flex-hamburger {
     display: none;
   }
@@ -355,7 +463,7 @@ header {
 
   .section-three {
     padding: 30px 0 0 0;
-    display: grid !important;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 54px;
   }

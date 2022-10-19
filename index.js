@@ -1,5 +1,4 @@
 const sectionthree = document.getElementById('Section-three');
-const btns = document.getElementById('btn');
 
 const Projectdetail = [
   {
@@ -60,27 +59,9 @@ const Projectdetail = [
 
 function Rpeatspecker() {
   let count;
-  for (count = 0; count < 2; count += 1) {
+  for (count = 0; count < Projectdetail.length; count += 1) {
     sectionthree.innerHTML
-        += `<div class="Backgroundspecker">    
-        <img class="background-img-speacker"  src="${Projectdetail[count].image}" alt="program1">
-        <div class="background">    
-          <h2 class="TitleOfspecker">${Projectdetail[count].Name}</h2>
-          <h3 class="speckerTitle">${Projectdetail[count].title}</h3>
-          <div class="second-hr"></div>
-          <p class="speackerdescription">${Projectdetail[count].description}</p>
-          </div>
-         
-      </div>`;
-  }
-}
-
-function Rpeatspecker2() {
-  let count;
-
-  for (count = 2; count < Projectdetail.length; count += 1) {
-    sectionthree.innerHTML
-        += `<div class="Backgroundspecker">    
+        += `<div id="Backgroundspecker${[count]}", class="Backgroundspecker${[count]}">    
         <img class="background-img-speacker"  src="${Projectdetail[count].image}" alt="program1">
         <div class="background">    
           <h2 class="TitleOfspecker">${Projectdetail[count].Name}</h2>
@@ -94,4 +75,3 @@ function Rpeatspecker2() {
 }
 
 document.addEventListener('DOMContentLoaded', Rpeatspecker, false);
-btns.addEventListener('click', Rpeatspecker2);

@@ -77,10 +77,11 @@ In this capstone project ((remember what they are?) ) you are going to build is 
 
 
 ## LiveDemo
-[Go Live](https://whitewolfx99.github.io/module1_capstone-/index.html)
+[Go Live](https://whitewolfx99.github.io/module1_capstone-/)
 
 ## documentation
 
+https://user-images.githubusercontent.com/94759531/196689439-5b052e93-a813-40ed-b6e6-d22b26bd0052.mp4
 
 
 ## Getting Started

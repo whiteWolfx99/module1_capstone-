@@ -12,6 +12,43 @@ header {
   flex-direction: column;
 }
 
+.menu-nav {
+  background-color: #272a32;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.paddflex {
+  padding: 15px;
+}
+
+.menu-nav img {
+  width: 25px;
+}
+
+.flex-p {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.flex-p a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .flex-hamburger {
   list-style-type: none;
   padding: 0 0 0 15px;
@@ -28,42 +65,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.firstfooter {
   background-color: #272a31;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 0 35px 0;
 }
 
-.firstfooter h2 {
-  color: #fff;
-  font-size: 22px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0 0 10px 0;
-}
-
-.third-hr {
-  width: 7%;
-  border-bottom: 2px solid #ec5242;
-  margin: 0;
-  padding: 0;
-}
-
-.grid-logo {
-  padding: 30px 0 0 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 54px;
-}
-
-.grid-logo img {
-  width: 130px;
-  height: auto;
+.colord3 {
+  color: #fff !important;
 }
 
 .googleclub {
@@ -78,7 +84,7 @@ header {
 }
 
 .secondfooter p {
-  color: #272a31;
+  color: #fff;
   width: 50%;
 }
 
@@ -256,12 +262,6 @@ header {
     border: 1px solid #272a31;
   }
 
-  .grid-logo {
-    padding: 30px 0 0 0;
-    display: flex;
-    flex-direction: column;
-  }
-
   .secondfooter img {
     width: 50%;
     height: auto;
@@ -343,12 +343,6 @@ header {
     display: flex;
     flex-direction: row;
     gap: 20px;
-  }
-
-  .grid-logo {
-    display: flex;
-    flex-direction: row;
-    grid: none;
   }
 
   .destopnavbar {

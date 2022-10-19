@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# HTML + basic JavaScript Capstone - day 1
+# Capstone
 
 ## Learning Objectives
 
@@ -21,6 +21,41 @@
 ## Description 
 
 In this capstone project ((remember what they are?) ) you are going to build is based on an online website for a conference. We provide some design guidelines for you to create the website, but you must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the you personalize your project so that you have something unique in your portfolio to share with potential employers during job searching.
+
+# HTML + basic JavaScript Capstone - day 1
+
+### Milestone 0 - project setup (0.5h)
+- Set up the repository and tools.
+
+### Milestone 1 - content (1h)
+- Choose the topic for your website.
+- Choose images, text, icons, fonts (we suggest using [Lato](https://www.latofonts.com/) as it is a free font similar to the one used in the original design).
+
+### Milestone 2 - mobile first (5h)
+- Create the 2 pages for mobile.
+- Deploy the project.
+
+# HTML + basic JavaScript Capstone - day 2
+
+### Day 2
+- Milestone 3 - desktop version (5h)
+
+### Adapt the 2 pages to desktop.
+- Milestone 4 - interactions (1.5h)
+- Implement the user interactions: link, mobile menu.
+- Deploy the project.
+
+# HTML + basic JavaScript Capstone - day 3
+
+### Milestone 5 - dynamic page (5h)
+
+- Implement the section "Featured speakers" with dynamic HTML.
+- Deploy the project and check to make sure everything works as planned.
+
+### Milestone 6 - documentation (1.5h)
+
+- Record a video describing your project.
+- Create a good README and pull request description.
 
 
 ## General requirements
@@ -43,6 +78,9 @@ In this capstone project ((remember what they are?) ) you are going to build is 
 
 ## LiveDemo
 [Go Live](https://whitewolfx99.github.io/module1_capstone-/index.html)
+
+## documentation
+
 
 ## Getting Started
 
